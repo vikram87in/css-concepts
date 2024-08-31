@@ -1,0 +1,22 @@
+/* Reset css starts here */
+
+html {
+    /* Sets a default font size and allows for easier scaling with rem units */
+    font-size: 100%;
+    /* Improves readability */
+    line-height: 1.6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Reset css ends here */

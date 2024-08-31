@@ -1,0 +1,189 @@
+/* Reset css starts here */
+
+html {
+    /* Sets a default font size and allows for easier scaling with rem units */
+    font-size: 100%;
+    /* Improves readability */
+    line-height: 1.6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /* padding: 0; */
+    margin: 0;
+}
+
+/* Reset css ends here */
+
+.intro::before {
+    content: url(//unsplash.it/100/100);
+}
+
+blockquote::before {
+    content: open-quote;
+    font-size: 2em;
+    color: brown;
+}
+
+blockquote::after {
+    content: close-quote;
+    font-size: 2em;
+    color: brown;
+}
+
+[data-tool-tip] {
+    position: relative;
+}
+
+[data-tool-tip]::after {
+    content: attr(data-tool-tip);
+    position: absolute;
+    background-color: lightgray;
+    color: white;
+    padding: 1em 2em;
+    border-radius: 5px;
+    display: block;
+    width: 250%;
+    left: 0;
+    bottom: 100%;
+    transform: scale(0);
+    transform-origin: 50px bottom;
+    transition: transform 0.3s ease-in;
+}
+
+[data-tool-tip]:hover::after {
+    transform: scale(1);
+}
+
+.section-with-deco::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f0e7';
+}
+
+.counters {
+    counter-reset: counter-section-title;
+}
+
+.counters .section::before {
+    counter-increment: counter-section-title;
+    content: counter(counter-section-title);
+    margin-right: 0.5em;
+    width: 1.8em;
+    height: 1.8em;
+    background: brown;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.counters .parent-ordered-list {
+    counter-reset: counter-li;
+}
+
+.counters .parent-ordered-list li {
+    list-style: none;
+    position: relative;
+}
+
+.counters .parent-ordered-list > li::before{
+    counter-increment: counter-li;
+    content: counter(counter-li);
+    display: inline-block;
+    background: rgb(175, 192, 175);
+    position: absolute;
+    left: -2em;
+    top: 0.2em;
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(128, 36, 226);
+}
+
+.child-ordered-list {
+    counter-reset: counter-child-li;
+}
+
+.child-ordered-list li {
+    list-style: none;
+    position: relative;
+}
+
+.child-ordered-list li::before {
+    counter-increment: counter-child-li;
+    content: counter(counter-li) "." counter(counter-child-li);
+    background: rgb(175, 192, 175);
+    position: absolute;
+    left: -2em;
+    top: 0.2em;
+    height: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(128, 36, 226);
+}
+
+.generic-header-section {
+    text-align: center;
+}
+
+.generic-header {
+    display: inline-block;
+    position: relative;
+}
+
+/* .generic-header::before, .generic-header::after {
+    position:absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: -1;
+}
+
+.generic-header::after{
+    background-color: salmon;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: -2;
+}
+
+.generic-header::before{
+    width: unset;
+    left: -20px;
+    right: -20px;
+} */
+
+.generic-header::before{
+    content: '';
+    position: absolute;
+    background: white;
+    height: 100%;
+    left: -20px;
+    right: -20px;
+    z-index: -1;
+}
+
+.generic-header::after{
+    content: '';
+    position: absolute;
+    background: blue;
+    height: 100%;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -2;
+}

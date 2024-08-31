@@ -1,0 +1,42 @@
+/* Reset css starts here */
+
+html {
+    /* Sets a default font size and allows for easier scaling with rem units */
+    /* font-size: 10px; */
+    /* Improves readability */
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Reset css ends here */
+
+.container {
+    width: 70vw;
+    border: 1px solid #ddd;
+ }
+ p {
+     font-size: 2rem;
+     color: #0077cc;
+     border: 1px solid #0077cc;
+    padding: 1em;
+    margin: 1em;
+ }
+
+
+
+ li {
+    font-size: 1.5rem;
+    margin-bottom: .5em;
+    /* line-height: 1em; */
+
+ }

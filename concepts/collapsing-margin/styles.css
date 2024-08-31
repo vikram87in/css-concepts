@@ -1,0 +1,56 @@
+/* Reset css starts here */
+
+html {
+    /* Sets a default font size and allows for easier scaling with rem units */
+    font-size: 100%;
+    /* Improves readability */
+    line-height: 1.6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Reset css ends here */
+
+h1 {
+    background-color: green;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.div {
+    outline: 1px solid red;
+    margin-top: 5px;
+    /* display: grid; */
+    /* display: flex; */
+    /* padding-top: 1px; */
+    /* overflow: hidden; */
+    /* display: flow-root; */
+}
+
+.parent, .inner {
+    /* display: flow-root; */
+    padding-top: 1px;
+}
+
+.empty {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    /* border: 1px solid black; */
+    outline: 1px solid blue;
+    /* display: flow-root; */
+}
+
+.last {
+    border: 1px solid black;
+    margin-top: 20px;
+}

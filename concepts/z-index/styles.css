@@ -1,0 +1,59 @@
+/* Reset css starts here */
+
+html {
+    /* Sets a default font size and allows for easier scaling with rem units */
+    font-size: 100%;
+    /* Improves readability */
+    line-height: 1.6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    /* margin: 0; */
+}
+
+/* Reset css ends here */
+
+.outer {
+    outline: 2px solid green;
+    position: relative;
+    /* z-index: 1; */
+}
+
+.pink, .grey {
+    /* outline: 1px solid red; */
+    width: 25%;
+    height: 40px;
+}
+
+.grey {
+    position: absolute;
+    background: grey;
+    top: 0;
+    left: 150px;
+    z-index: 2;
+}
+.pink {
+    position: absolute;
+    background: pink;
+    z-index: 2;
+}
+
+.yellow {
+    background: yellow;
+    height: 40px;
+}
+
+.lightblue {
+    position: relative;
+    width: 100%;
+    background: lightblue;
+    z-index: 10000;
+}

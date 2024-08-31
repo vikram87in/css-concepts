@@ -1,0 +1,10 @@
+.parent {
+    border: 1px solid red;
+    text-align: center;
+}
+
+.parent span {
+    display: block;
+    width: 300px;
+    border: 1px solid blue;
+}

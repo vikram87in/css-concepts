@@ -1,0 +1,62 @@
+/* Reset css starts here */
+
+html {
+    /* Sets a default font size and allows for easier scaling with rem units */
+    font-size: 100%;
+    /* Improves readability */
+    line-height: 1.6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Reset css ends here */
+
+.container {
+    background-color: lightgrey;
+    border: 3px solid #000000;
+    
+    /* creates a new block formatting context. */
+    /* overflow: auto;  */
+    
+    /* Best and modern approach. This also creates a new block formatting context. */
+    display: flow-root;
+  }
+
+  /* .container::after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+
+.child {
+    width: 20%;
+    margin-right: 10px;
+  }
+
+  .child1 {
+    float: left;
+    height: 100px;
+    background-color: yellow;
+  }
+
+  .child2 {
+    float: left;
+    height: 150px;
+    background-color: green;
+  }
+
+  .child3 {
+    float: right;
+    height: 120px;
+    background-color: blue;
+  }
