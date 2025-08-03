@@ -20,6 +20,26 @@ Here is the current folder structure of the project:
 ```
 
 - The `template.html` and `styles.css` files in the root directory can be used as a starting point for creating new HTML and CSS files.
+
+### 🚀 Quick Start - Creating New Concepts
+
+Use the automation script to quickly create new concept folders with all necessary files:
+
+```bash
+./create-concept.sh <concept-name> "Display Name"
+```
+
+**Example:**
+```bash
+./create-concept.sh flexbox "CSS Flexbox Layout"
+```
+
+This command will:
+- ✅ Create a new folder: `concepts/flexbox/`
+- ✅ Generate `index.html` with proper template structure
+- ✅ Generate `styles.css` with concept-specific styling
+- ✅ Replace placeholders with your concept name
+
 - The `concept` folder contains subfolders for each concept you will be learning. Inside each concept folder, you will find an `index.html` file where you can practice and experiment with the specific concept.
 - The `assets` folder is used to store any additional assets, such as images, that you may need for your project.
 
