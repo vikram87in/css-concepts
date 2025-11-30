@@ -1,0 +1,61 @@
+/* Reset css starts here */
+
+html {
+    /* Sets a default font size and allows for easier scaling with rem units */
+    font-size: 100%;
+    /* Improves readability */
+    line-height: 1.6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Reset css ends here */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.tooltip-box {
+    background-color: rgb(132, 95, 30);
+    width: 300px;
+    height: 150px;
+    border: 6px solid rgb(101, 145, 148);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    margin: 50px;
+}
+
+.tooltip-box::before {
+    position: absolute;
+    left: 30px;
+    top: -69px;
+    content: '';
+    border: 34px solid transparent;
+    border-bottom-color: rgb(101, 145, 148);
+
+}
+
+.tooltip-box::after {
+    position: absolute;
+    top: -60px;
+    left: 30px;
+    content: '';
+    border: 34px solid transparent;
+    border-bottom-color: rgb(132, 95, 30);
+}
